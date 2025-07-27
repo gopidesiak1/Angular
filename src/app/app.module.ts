@@ -10,9 +10,11 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { InterpolationComponent } from './components/interpolation/interpolation.component';
+import { UserCardComponentComponent } from './components/user-card-component/user-card-component.component';
+import { DeleteButtonComponentComponent } from './components/delete-button-component/delete-button-component.component';
 
 @NgModule({
-  declarations: [AppComponent, InterpolationComponent],
+  declarations: [AppComponent, InterpolationComponent, UserCardComponentComponent, DeleteButtonComponentComponent],
   imports: [
     BrowserModule,
     NoopAnimationsModule,

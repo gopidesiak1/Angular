@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { User } from '../model/user';
 
 @Component({
   selector: 'app-interpolation',
@@ -46,4 +47,20 @@ export class InterpolationComponent {
       alert('Please fill all fields');
     }
   }
+
+  userInfo: User = {
+    name: 'anil kumar',
+    location: 'Guntur',
+  };
+
+ handleDelete() {
+    console.log('Item deleted');
+  }
+
+
+
 }
+
+
+
+

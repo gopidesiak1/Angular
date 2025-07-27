@@ -50,3 +50,9 @@
 ><br />
 
 <button (click)="addStudent()">Add Student</button>
+
+<app-user-card-component [user]="userInfo"></app-user-card-component>
+
+<app-delete-button-component
+  (delete)="handleDelete()"
+></app-delete-button-component>
