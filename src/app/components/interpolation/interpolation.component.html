@@ -1,0 +1,52 @@
+<mat-card class="user-card">
+  <mat-card-header
+    >This concept using interpolation and property binding</mat-card-header
+  >
+  <mat-card-title>{{ FullName }}</mat-card-title>
+  <mat-card-subtitle>Software Engineer</mat-card-subtitle>
+  <mat-card-content>
+    <div mat-card-avatar class="user-avatar">
+      <img
+        [src]="profileImageurl"
+        alt="Profile Image"
+        style="width: 70px; height: 60px; object-fit: cover"
+      />
+    </div>
+  </mat-card-content>
+</mat-card>
+
+<div>Event binding</div>
+<div>
+  <button mat-raised-button color="primary" (click)="clickme()">clickme</button>
+  <div>{{ count }}</div>
+</div>
+<label for="liveInput">Enter Text:</label>
+<input
+  id="liveInput"
+  type="text"
+  placeholder="input text"
+  [(ngModel)]="inputText"
+/>
+
+<div>
+  <strong>Preview:</strong>
+  {{ inputText }}
+</div>
+
+<div *ngFor="let student of students">
+  <ul>
+    <li>{{ student.id }}</li>
+    <li>{{ student.name }}</li>
+    <li>{{ student.course }}</li>
+    <button (click)="removeStudent(student.id)">Remove</button>
+  </ul>
+</div>
+
+<h2>Add Student</h2>
+
+<label>ID: <input type="number" [(ngModel)]="newStudent.id" /></label><br />
+<label>Name: <input type="text" [(ngModel)]="newStudent.name" /></label><br />
+<label>Course: <input type="text" [(ngModel)]="newStudent.course" /></label
+><br />
+
+<button (click)="addStudent()">Add Student</button>
