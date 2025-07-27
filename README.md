@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+# MyAngularApp
+=======
 # Angular16v
+>>>>>>> 715d169e8d1b06642063ec30262831c335e90459
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
 
