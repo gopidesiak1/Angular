@@ -1,0 +1,11 @@
+<div style="border: 20px solid blue">
+  <h1>this is parent component</h1>
+
+  <!-- projecting child -->
+  <app-child></app-child>
+
+  <button mat-raised-button color="primary" (click)="callChildMethod()">
+    call child method
+  </button>
+  <p>child message (Accessed in parent) {{ childComp?.childMessage }}</p>
+</div>
